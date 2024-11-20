@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 
 interface Experience {
+  id: number; // Add a unique identifier
   company: string;
   role: string;
   duration: string;
@@ -11,6 +12,7 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
+    id: 1,
     company: "Interface Infosoft Solutions Private Limited, Pune",
     role: "Software Engineer",
     duration: "July 2021 - January 2024",
@@ -24,6 +26,7 @@ const experiences: Experience[] = [
     ],
   },
   {
+    id: 2,
     company: "Freelance Project (USA)",
     role: "Tile-Based Rendering Engine Developer",
     duration: "January 2024 - May 2024",
@@ -57,11 +60,10 @@ const WorkExperience: React.FC = () => {
         >
           <source src="/experienceVid2.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 opacity-40"></div>
+        <div className="absolute inset-0 bg-black opacity-40"></div>
       </div>
 
       <div className="container relative z-10 px-6 lg:px-20">
-        {/* Section Header */}
         <h1 className="text-5xl font-medium text-center tracking-wide text-teal-400 mb-3">
           Work Experience
         </h1>
@@ -78,7 +80,7 @@ const WorkExperience: React.FC = () => {
           <div className="space-y-16">
             {experiences.map((experience, index) => (
               <div
-                key={index}
+                key={experience.id || index} // Use unique ID or fallback to index
                 className={`flex flex-col items-center lg:flex-row ${
                   index % 2 === 0 ? "lg:flex-row-reverse" : ""
                 }`}
