@@ -1,4 +1,4 @@
-// File: D:\YASH\Builds\yash-portfolio\YashTashildar\src\app\projects\page.tsx
+// File: D:\YASH\Builds\yash-portfolio\src\app\projects\page.tsx
 import * as entry from '../../../../src/app/projects/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
