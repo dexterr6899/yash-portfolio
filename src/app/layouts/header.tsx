@@ -7,11 +7,9 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { FaLinkedin, FaGithub, FaStackOverflow } from "react-icons/fa";
 
-type HeaderProps = {
-  activeKey: number;
-};
 
-export default function Header({ activeKey }: HeaderProps) {
+
+export default function Header() {
   const menuItems = [
     { name: "Home", href: "/", key: 1 },
     { name: "Projects", href: "/projects", key: 2 },

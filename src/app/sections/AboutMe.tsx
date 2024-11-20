@@ -20,7 +20,7 @@ const AboutSection = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-6 text-teal-400">Get to Know Me!</h3>
             <p className="text-gray-400 mb-4">
-              I'm a SQL Developer with expertise in designing efficient and reliable databases. I specialize in SQL, database management, and data warehousing, focusing on optimizing data retrieval and storage solutions.
+              I&apos;m a SQL Developer with expertise in designing efficient and reliable databases. I specialize in SQL, database management, and data warehousing, focusing on optimizing data retrieval and storage solutions.
             </p>
             <p className="text-gray-400 mb-4">
               My passion lies in improving database performance, creating robust data models, and collaborating with developers to enhance backend infrastructure. I enjoy sharing my knowledge and helping teams improve their data practices.
@@ -29,7 +29,7 @@ const AboutSection = () => {
               In my free time, I contribute to open-source SQL projects, write blog posts about database optimization, and explore emerging database technologies.
             </p>
             <p className="text-gray-400 mb-6">
-              I'm open to collaboration opportunities where I can add value to data-driven projects. Feel free to reach out if you're interested in working together.
+              I&apos;m open to collaboration opportunities where I can add value to data-driven projects. Feel free to reach out if you&apos;re interested in working together.
             </p>
 
             {/* Projects Button */}

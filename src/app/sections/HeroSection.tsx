@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { FaLinkedin, FaTwitter, FaGithub, FaStackOverflow, FaDatabase } from 'react-icons/fa';
 import backgroundImage from '../../../public/HeroSection/martin-martz-5_LU55UmHYA-unsplash.jpg';
 import HeroSocialLinks from '../components/heroSocialLinks';
 
