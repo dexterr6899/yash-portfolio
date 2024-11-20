@@ -7,6 +7,11 @@ import projectsData from "../data/projectsData";
 const ProjectsPage: React.FC = () => {
   const [activeKey, setActiveKey] = useState<number | null>(null);
 
+  // Check if projectsData exists before rendering
+  if (!projectsData || projectsData.length === 0) {
+    return <p className="text-center text-gray-400">No projects available</p>;
+  }
+
   return (
     <section className="min-h-screen bg-black py-16 text-white">
       <div className="container mx-auto px-6 text-center">
@@ -17,7 +22,7 @@ const ProjectsPage: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projectsData.map((project, index) => (
             <div
-              key={index}
+              key={project.id || index} // Prefer project.id if available
               className={`relative bg-gray-900 rounded-lg shadow-lg overflow-hidden group transform transition duration-300 ${
                 activeKey === index ? "scale-105" : "hover:scale-105"
               }`}
@@ -29,7 +34,8 @@ const ProjectsPage: React.FC = () => {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  layout="fill"
+                  width={300}
+                  height={200}
                   objectFit="cover"
                   className={`transition-transform duration-300 transform ${
                     activeKey === index ? "scale-110" : "group-hover:scale-110"
@@ -62,29 +68,6 @@ const ProjectsPage: React.FC = () => {
                   >
                     GitHub
                   </a>
-                </div>
-              </div>
-
-              {/* Project Details */}
-              <div className="p-6">
-                <h2
-                  className={`text-2xl font-bold mb-2 transition ${
-                    activeKey === index ? "text-gray-300" : "group-hover:text-gray-300"
-                  }`}
-                >
-                  {project.title}
-                </h2>
-                <div className="flex flex-wrap gap-2 mt-4">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span
-                      key={techIndex}
-                      className={`bg-gray-800 text-gray-300 px-3 py-1 rounded-full text-sm font-medium transition ${
-                        activeKey === index ? "bg-gray-700" : ""
-                      }`}
-                    >
-                      {tech}
-                    </span>
-                  ))}
                 </div>
               </div>
             </div>

@@ -1,5 +1,6 @@
 const projectsData = [
     {
+        "id": 1,
         "title": "Data Warehouse Optimization",
         "description": "Optimized a data warehouse system, reducing query processing time by 40% and enhancing overall system performance.",
         "image": "/images/data-warehouse.jpg",
@@ -8,6 +9,7 @@ const projectsData = [
         "github": "https://github.com/username/project1"
       },
       {
+        "id": 2,
         "title": "Real-Time Analytics Dashboard",
         "description": "Built a real-time analytics dashboard with SQL and integration with a React frontend for live data updates.",
         "image": "/images/analytics-dashboard.jpg",
@@ -16,6 +18,7 @@ const projectsData = [
         "github": "https://github.com/username/project2"
       },
       {
+        "id": 3,
         "title": "Weddings by Pixelite",
         "description": "Designed and implemented an automated ETL pipeline, extracting, transforming, and loading data into a cloud-based warehouse.",
         "image": "/Thumbnails/projects/weddingsByPixelite.png",
