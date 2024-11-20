@@ -22,9 +22,9 @@ export default function Footer() {
       </div>
 
       {/* Contact Button */}
-      <Link href="/contact" className="relative z-10 inline-block bg-teal-400 text-gray-900 font-semibold py-2 px-6 rounded hover:bg-teal-500 transition-all duration-300 mb-6">
+      {/* <Link href="/contact" className="relative z-10 inline-block bg-teal-400 text-gray-900 font-semibold py-2 px-6 rounded hover:bg-teal-500 transition-all duration-300 mb-6">
         Get in Touch
-      </Link>
+      </Link> */}
 
       {/* Social Media Icons */}
       <div className="relative z-10 flex space-x-6 text-2xl mb-8">
