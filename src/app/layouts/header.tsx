@@ -7,20 +7,16 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { FaLinkedin, FaGithub, FaStackOverflow } from "react-icons/fa";
 
-
-
 export default function Header() {
   const menuItems = [
-    { name: "Home", href: "/", key: 1 },
-    { name: "Projects", href: "/projects", key: 2 },
-    { name: "Skills", href: "/skills", key: 3 },
-    { name: "Contact", href: "/contact", key: 4 },
-    { name: "Blog", href: "/blogs", key: 5 },
+    { name: "Home", href: "/" },
+    { name: "Projects", href: "/projects" },
+    { name: "Blog", href: "/blogs" },
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
-  const pathname = usePathname();
+  const pathname = usePathname(); // Get current pathname
 
   const handleScroll = () => {
     setIsScroll(window.scrollY > 100);
@@ -61,9 +57,9 @@ export default function Header() {
 
         {/* Desktop Navigation Links */}
         <nav className="hidden lg:flex space-x-6 text-base font-medium">
-          {menuItems.map((menu, index) => (
+          {menuItems.map((menu) => (
             <Link
-              key={index}
+              key={menu.href}
               href={menu.href}
               className={`hover:text-teal-600 transition ${
                 pathname === menu.href ? "text-teal-600" : "text-gray-500"
@@ -110,9 +106,9 @@ export default function Header() {
 
           {/* Navigation Links */}
           <nav className="space-y-8 text-lg text-gray-800">
-            {menuItems.map((menu, index) => (
+            {menuItems.map((menu) => (
               <Link
-                key={index}
+                key={menu.href}
                 href={menu.href}
                 className="block text-xl font-medium hover:text-teal-600 transition duration-300"
                 onClick={closeDrawer}

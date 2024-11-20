@@ -49,34 +49,34 @@ export default function Footer() {
           <ul className="space-y-1">
             <li><Link href="/" className="hover:text-white">Home</Link></li>
             <li><Link href="/projects" className="hover:text-white">Projects</Link></li>
-            <li><Link href="/about" className="hover:text-white">About Me</Link></li>
-            <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
+            {/* <li><Link href="/about" className="hover:text-white">About Me</Link></li>
+            <li><Link href="/contact" className="hover:text-white">Contact</Link></li> */}
             <li><Link href="/blogs" className="hover:text-white">Blog</Link></li>
           </ul>
         </div>
         <div>
           <h3 className="font-semibold text-lg text-teal-400 mb-2">SQL Projects</h3>
           <ul className="space-y-1">
-            <li><Link href="/projects/etl-pipelines" className="hover:text-white">ETL Pipelines</Link></li>
+            {/* <li><Link href="/projects/etl-pipelines" className="hover:text-white">ETL Pipelines</Link></li>
             <li><Link href="/projects/data-warehousing" className="hover:text-white">Data Warehousing</Link></li>
-            <li><Link href="/projects/reporting-analytics" className="hover:text-white">Reporting & Analytics</Link></li>
+            <li><Link href="/projects/reporting-analytics" className="hover:text-white">Reporting & Analytics</Link></li> */}
           </ul>
         </div>
         <div>
           <h3 className="font-semibold text-lg text-teal-400 mb-2">Services</h3>
           <ul className="space-y-1">
-            <li><Link href="/services/database-design" className="hover:text-white">Database Design</Link></li>
+            {/* <li><Link href="/services/database-design" className="hover:text-white">Database Design</Link></li>
             <li><Link href="/services/query-optimization" className="hover:text-white">Query Optimization</Link></li>
             <li><Link href="/services/data-analysis" className="hover:text-white">Data Analysis</Link></li>
-            <li><Link href="/services/sql-training" className="hover:text-white">SQL Training</Link></li>
+            <li><Link href="/services/sql-training" className="hover:text-white">SQL Training</Link></li> */}
           </ul>
         </div>
         <div>
           <h3 className="font-semibold text-lg text-teal-400 mb-2">Resources</h3>
           <ul className="space-y-1">
             <li><Link href="/blogs" className="hover:text-white">Blog</Link></li>
-            <li><Link href="/resources/sql-cheat-sheet" className="hover:text-white">SQL Cheat Sheet</Link></li>
-            <li><Link href="/resources/tools" className="hover:text-white">Tools & Tips</Link></li>
+            {/* <li><Link href="/resources/sql-cheat-sheet" className="hover:text-white">SQL Cheat Sheet</Link></li>
+            <li><Link href="/resources/tools" className="hover:text-white">Tools & Tips</Link></li> */}
           </ul>
         </div>
       </div>
